@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/homeStyle.css"/>
+  </head>
+  <body>
+    <form action = "../regist.php" method="POST">
+    <section class = "mainBg">
+      <header>
+        <div class = "container">
+          <div class="Title">
+            <div to="/" class="mainTitle">
+              <a class = "linkBtn" href="../html/index.html" titleName Title">GEOSAT</a>
+            </div>
+          </div>
+
+          <nav class="navBtn">
+            <a href="../html/index.html" class="Btn">HOME</a>
+            <a href="../html/index.html" class="Btn">About</a>
+            <a href="../html/index.html" class="Btn">MEASURMENT</a>
+          </nav>
+
+        </div>
+      </header>
+
+      <hero class = "containerHero">
+        <div class="loginSec">
+          <label class="loginBox loginBoxH" for="ID">
+            <input
+              class="inputBox Strong textMain"
+              type="text"
+              placeholder="ENTER ID"
+              name ="userID"
+              id="userID"
+            />
+            <span class = "textAlert">존재하는 ID입니다.</span>
+          </label>
+          <label class="loginBox" for="PW">
+            <input
+              class="inputBox Strong textMain"
+              type="password"
+              placeholder="ENTER PASSWORD"
+              name="PW"
+              id="PW"
+            />
+          </label>
+          <label class="loginBox loginBoxH" for="REPW">
+            <input
+              class="inputBox Strong textMain"
+              type="password"
+              placeholder="RETYPE PASSWORD"
+              name="PW2"
+              id="PW2"
+            />
+            <span class = "textAlert">PW가 일치하지 않습니다.</span>
+          </label>
+          <label class="loginBox" for="NAME">
+            <input
+              class="inputBox Strong textMain"
+              type="text"
+              placeholder="ENTER NAME"
+              name="name"
+              id="name"
+            />
+          </label>
+          <label class="loginBox" for="OFFICE">
+            <input
+              class="inputBox Strong textMain"
+              type="text"
+              placeholder="ENTER YOUR OFFICE"
+              name="office"
+              id="office"
+            />
+          </label>
+          <label class = "loginBox inputBoxC" for="info">
+            <span class = "infoCheck">개인 정보 수집 및 이용에 동의하시겠습니까?</span>
+            <input type="checkbox">
+          </label>
+          <div class="BtnBox">
+            <input class="loginBtn" id="signupBtn" type="submit" value="SIGN UP"/input>
+          </div>
+        </div>
+      </hero>
+
+      <footer>
+        <div class = "container">
+            <div>
+              <a href = "../html/index.html" class="Title FooterTitle">GEOSAT</a>
+            </div>
+
+            <div class = "copyright">
+                <p class = "Strong">국지형 기상관측 및 먼지지붕 관측</p>
+                <p>© 2022 by Hanseo AeroSpace S/W DBLab</p>
+                <p>CocoPig1028, moonk0416</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    </form>
+  </body>
+</html>

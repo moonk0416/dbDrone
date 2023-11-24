@@ -1,0 +1,111 @@
+.mainBg {
+  position: relative;
+  z-index: 1;
+}
+
+.mainBg:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../img/bg-masthead.jpg");
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.containerHero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conHeroC {
+  flex-direction: column;
+}
+
+.boardListWrap {
+  width: 700px;
+  padding: 50px;
+}
+
+.boardListHead {
+  border-top: 3px solid rgba(64,64,64,0.5);
+  border-bottom: 3px solid rgba(64,64,64,0.5);
+}
+
+.boardListBody .item {
+  border-bottom: 2px solid rgba(64,64,64,0.5);
+}
+
+.boardListHead,
+.boardListBody .item {
+  font-size: 0;
+  padding: 10px 0;
+}
+
+.boardListBody .item:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.boardListHead > div,
+.boardListBody .item > div {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+}
+
+.boardListHead > div {
+  font-weight: 600;
+}
+
+.boardList .num {
+  width: 10%;
+}
+
+.boardList .tit {
+  width: 35%;
+}
+
+/* .boardList .boardListBody div.tit {
+  text-align: left;
+} */
+
+/* .boardList .boardListBody .tit a:hover {
+  text-decoration: underline;
+} */
+
+.boardList .writer {
+  width: 15%;
+}
+
+.boardList .date {
+  width: 20%;
+}
+
+.boardList .location {
+  width: 20%;
+}
+
+.pageBtn {
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: rgba(64,64,64,0.2);
+  border-radius: 15px;
+  margin: 8px;
+  font-size: 12px;;
+}
+
+.pageBtn:hover {
+  background-color: white;
+}
+
+.insertM {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

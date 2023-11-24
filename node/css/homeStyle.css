@@ -1,0 +1,79 @@
+.mainBg {
+  position: relative;
+  z-index: 1;
+}
+
+.mainBg:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(../img/bg-masthead.jpg);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.loginSec {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 40px;
+}
+
+.containerHero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBox {
+  margin: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.loginBoxH {
+  flex-direction: column;
+}
+
+.loginBtn {
+  /* font-family: Noto-Sans; */
+  font-family: Apple SD Gothic Neo;
+  /* color: rgba(64, 64, 64, 1); */
+  color: rgba(264, 264, 264, 1);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  padding-left: 40px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  border-radius: 20px;
+  background-color: grey;
+  margin-bottom: 8px;
+}
+
+.loginBtn:hover {
+  background-color: rgba(264, 264, 264, 1);
+  color: rgba(64, 64, 64, 1);
+}
+
+.subloginBtn {
+  border: none;
+  background-color: inherit;
+}
+
+.BtnBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pwrecheck {
+  display: none;
+}
