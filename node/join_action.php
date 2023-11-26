@@ -13,7 +13,7 @@
         if($result) {
         ?>      <script>
                 alert('가입 되었습니다.');
-                location.replace("./login.php");
+                location.replace("login.php");
                 </script>
  
 <?php   }

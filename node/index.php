@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/homeStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
   </head>
   <body>
     <section class="mainBg">
@@ -16,26 +16,26 @@
         <div class="container">
           <div class="Title">
             <div to="/" class="mainTitle">
-              <a class = "linkBtn" href="/" titleName Title">GEOSAT</a>
+              <a class = "linkBtn" href="index.php" titleName Title">GEOSAT</a>
             </div>
           </div>
           <nav class="navBtn">
-            <a href="/" class="Btn">HOME</a>
-            <a href="/about.php" class="Btn">ABOUT</a>
+            <a href="index.php" class="Btn">HOME</a>
+            <a href="about.php" class="Btn">ABOUT</a>
 <?php
 session_start();
 //로그인이 되었다면 userID를 불러와 로그인 정보 표시
 if (isset($_SESSION['userID'])) {
     ?>
     <button type="button" class="logoutBtn textMain" onclick ="location.href='show_m.php'">&ensp;MEASUREMENT</button>
-    <a href="/mypage.php" class = "Btn" >MYPAGE</a>
+    <a href="mypage.php" class = "Btn" >MYPAGE</a>
     <button type="button" class="logoutBtn textMain" onclick = "location.href='logout_action.php'">LOGOUT&ensp;</button>
     <?php echo $_SESSION['userID']; ?>님
 <?php
 //로그인이 되어있지 않으면 무조건 로그인 먼저 하도록
 } else {
         ?> 
-<button class = "Btn textMain headerLoginBtn" onclick="location.href='/login.php'">LOGIN</button>
+<button class = "Btn textMain headerLoginBtn" onclick="location.href='login.php'">LOGIN</button>
 <br />
 <?php }
         ?>
@@ -68,7 +68,7 @@ if (isset($_SESSION['userID'])) {
       <footer>
         <div class="container">
           <div>
-            <a href = "/" class="Title FooterTitle">GEOSAT</a>
+            <a href = "index.php" class="Title FooterTitle">GEOSAT</a>
           </div>
 
           <div class="copyright">

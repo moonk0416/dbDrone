@@ -5,24 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/homeStyle.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
   </head>
   <body>
-    <form action = "../join_action.php" method="POST">
+    <form action = "join_action.php" method="POST">
     <section class = "mainBg">
       <header>
         <div class = "container">
           <div class="Title">
-            <div to="/" class="mainTitle">
-              <a class = "linkBtn" href="/" titleName Title">GEOSAT</a>
+            <div to="index.php" class="mainTitle">
+              <a class = "linkBtn" href="index.php" titleName Title>GEOSAT</a>
             </div>
           </div>
           <nav class="navBtn">
-            <a href="/" class="Btn">HOME</a>
-            <a href="../about.php" class="Btn">ABOUT</a>
+            <a href="index.php" class="Btn">HOME</a>
+            <a href="about.php" class="Btn">ABOUT</a>
           </nav>
         </div>
       </header>
@@ -85,7 +85,7 @@
       <footer>
         <div class = "container">
             <div>
-              <a href = "/" class="Title FooterTitle">GEOSAT</a>
+              <a href = "index.php" class="Title FooterTitle">GEOSAT</a>
             </div>
 
             <div class = "copyright">

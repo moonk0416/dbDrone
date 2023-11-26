@@ -6,10 +6,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/measureStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
 </head>
 
 <body>
@@ -18,16 +18,16 @@
             <div class="container">
                 <div class="Title">
                     <div to="/" class="mainTitle">
-                        <a class="linkBtn" href="/index.php" titleName Title">GEOSAT</a>
+                        <a class="linkBtn" href="index.php" titleName Title>GEOSAT</a>
                     </div>
                 </div>
 
                 <nav class="navBtn">
-                    <a href="/" class="Btn">HOME</a>
-                    <a href="/about.php" class="Btn">ABOUT</a>
+                    <a href="index.php" class="Btn">HOME</a>
+                    <a href="about.php" class="Btn">ABOUT</a>
                     <button type="button" class="logoutBtn textMain"
                         onclick="location.href='show_m.php'">MEASUREMENT</button>
-                    <a href="/mypage.php" class="Btn">MYPAGE</a>
+                    <a href="mypage.php" class="Btn">MYPAGE</a>
                     <button type="button" class="logoutBtn textMain"
                         onclick="location.href='logout_action.php'">LOGOUT&ensp;</button>
                     <?php
@@ -46,7 +46,7 @@
         </header>
         <hero class="containerHero conHeroC">
             <button type="button" class="logoutBtn" onclick="location.href='insert_m.php'">INSERT</button>
-            <form action="/delete_action.php" method="POST">
+            <form action="delete_action.php" method="POST">
                 <input type="number" placeholder="삭제할 리스트 번호" name="listNum"/>
                 <input type="submit" name="delete" value="DELETE" />
             </form>
@@ -59,7 +59,7 @@
                         <div class="writer">Temperature</div>
                         <div class="date">Co</div>
                         <div class="location">Dust</div>
-                        <div>Date</div>
+                        <!-- <div>Date</div> -->
 
                     </div>
                     <div class="boardListBody textMain">
@@ -86,9 +86,6 @@
                       . '<div class = "location">'
                       . $row['Dust'] . '&nbsp'
                       . '</div>'
-                      . '<div>'
-                      . $row['Date'] . '&nbsp'
-                      . '</div>'
                       ;
               }
               ?>
@@ -100,7 +97,7 @@
         <footer>
             <div class="container">
                 <div>
-                    <a href="/" class="Title FooterTitle">GEOSAT</a>
+                    <a href="index.php" class="Title FooterTitle">GEOSAT</a>
                 </div>
 
                 <div class="copyright">

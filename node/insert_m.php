@@ -5,26 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/measureStyle.css" />
-    <link rel="stylesheet" href="../css/homeStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/measureStyle.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
+    
   </head>
   <body>
     <section class="mainBg">
       <header>
         <div class="container">
           <div class="Title">
-            <div to="/" class="mainTitle">
-              <a class = "linkBtn" href="../html/index.html" titleName Title">GEOSAT</a>
+            <div to="index.php" class="mainTitle">
+              <a class = "linkBtn" href="index.html" titleName Title">GEOSAT</a>
             </div>
           </div>
           <nav class="navBtn">
-            <a href="/" class="Btn">HOME</a>
-            <a href="/about.php" class="Btn">ABOUT</a>
-            <a href="/show_m.php" class="Btn">MEASURMENT</a>
-            <a href="/mypage.php" class="Btn">MYPAGE</a>
+            <a href="index.php" class="Btn">HOME</a>
+            <a href="about.php" class="Btn">ABOUT</a>
+            <a href="show_m.php" class="Btn">MEASURMENT</a>
+            <a href="mypage.php" class="Btn">MYPAGE</a>
             <button type="button" class="logoutBtn textMain" onclick = "location.href='logout_action.php'">LOGOUT&ensp;</button>
 <?php
 //아래의 userID를 불러오기 위한 세션 오픈
@@ -44,13 +45,13 @@ $total = mysqli_num_rows($result);
       </header>
       <hero class="containerHero conHeroC">
       <div class = "insertM">
-      <form action="/insert_m_action.php" method="POST">
+      <form action="insert_m_action.php" method="POST">
         <input class="inputBox Strong textMain" type="number" placeholder="DroneNumber" name="DroneNum"/>
         <input class="inputBox Strong textMain" type="text" placeholder="Pressure" name="pressure" id="userID" />
         <input class="inputBox Strong textMain" type="text" placeholder="Temperature" name="temperature" id="userID" />
         <input class="inputBox Strong textMain" type="text" placeholder="Co" name="co" id="userID" />
         <input class="inputBox Strong textMain" type="text" placeholder="Dust" name="dust" id="userID" />
-        <input class="inputBox Strong textMain" type="date" placeholder="date" name="date" id="userID" />
+        <!-- <input class="inputBox Strong textMain" type="date" placeholder="date" name="date" id="userID" /> -->
         <!-- submit 타입으로 input값을 POST 방식으로 넘겨준다. -->
         <input class="enroll" type="submit" name="update" value="ENROLL"/>
     </form>
@@ -59,7 +60,7 @@ $total = mysqli_num_rows($result);
       <footer>
         <div class="container">
           <div>
-            <a href = "/" class="Title FooterTitle">GEOSAT</a>
+            <a href = "index.php" class="Title FooterTitle">GEOSAT</a>
           </div>
 
           <div class="copyright">

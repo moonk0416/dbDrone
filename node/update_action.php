@@ -11,7 +11,7 @@
         if($result) {
         ?>      <script>
                 alert('비밀번호가 변경되었습니다.');
-                location.replace("/mypage.php");
+                location.replace("mypage.php");
                 </script>
  
 <?php   }

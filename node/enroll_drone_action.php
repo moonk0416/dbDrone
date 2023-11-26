@@ -13,7 +13,7 @@
         if(mysqli_num_rows($result)==1) {
             ?><script>
                 alert('이미 존재하는 드론 번호입니다.');
-                location.replace("/mypage.php");
+                location.replace("mypage.php");
             </script>
 <?php
         }
@@ -23,7 +23,7 @@
         if($result) {
         ?>      <script>
                 alert('드론 번호가 등록 되었습니다.');
-                location.replace("/mypage.php");
+                location.replace("mypage.php");
                 </script>
 <?php   }
         else{

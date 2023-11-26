@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/homeStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
   </head>
   <body>
       <section class="mainBg">
         <header>
           <div class="container">
             <div class="Title">
-              <div to="/" class="mainTitle">
-                <a class = "linkBtn" href="/" titleName Title">GEOSAT</a>
+              <div to="index.php" class="mainTitle">
+                <a class = "linkBtn" href="index.php" titleName Title">GEOSAT</a>
               </div>
             </div>
   
             <nav class="navBtn">
-              <a href="/index.php" class="Btn">HOME</a>
-              <a href="/about.php" class="Btn">About</a>
+              <a href="index.php" class="Btn">HOME</a>
+              <a href="about.php" class="Btn">About</a>
             </nav>
           </div>
         </header>
@@ -29,11 +29,11 @@
         <hero class="containerHero">
           <div class="weatherAPI">
             <div>
-              <img class = "geosatImg" src="/img/GEOSATRN.png" alt="">
+              <img class = "geosatImg" src="img/GEOSATRN.png" alt="">
             </div>
           </div>
           <div class="loginSec">
-            <form action="/login_action.php" method="POST">
+            <form action="login_action.php" method="POST">
             <label class="loginBox" for="ID">
               <input
                 class="inputBox Strong textMain"
@@ -56,8 +56,8 @@
             </form>
             <div class="BtnBox">
               <div class = "subloginBtn" >
-                <button class = "subloginBtn textMain Btn" href="/html/find.html">Find ID/PW</button>
-                <button class = "subloginBtn textMain Btn" onclick="location.href='/join.php'">SIGN UP</button>
+                <button class = "subloginBtn textMain Btn" href="find.html">Find ID/PW</button>
+                <button class = "subloginBtn textMain Btn" onclick="location.href='join.php'">SIGN UP</button>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
         <footer>
           <div class="container">
             <div>
-              <a href = "/html/index.html" class="Title FooterTitle">GEOSAT</a>
+              <a href = "index.html" class="Title FooterTitle">GEOSAT</a>
             </div>
   
             <div class="copyright">

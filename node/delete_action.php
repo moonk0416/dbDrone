@@ -16,7 +16,7 @@
             ?>
                 <script>
                     alert("삭제되었습니다.");
-                    location.href = "/show_m.php";
+                    location.href = "show_m.php";
                 </script>
                 <?php
         }
@@ -24,7 +24,7 @@
             ?>
             <script>
                 alert('존재하지 않는 리스트 번호입니다.');
-                location.href = "/show_m.php";
+                location.href = "show_m.php";
             </script>
             <?php
         }

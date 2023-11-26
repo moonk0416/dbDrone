@@ -21,7 +21,7 @@
                 <script>
                 alert("로그인 되었습니다.");
                 //로그인되면 메인화면(index.php)로 이동
-                location.replace("./index.php");
+                location.replace("index.php");
                 </script>
 <?php
                         }

@@ -6,10 +6,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/homeStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
 </head>
 
 <body>
@@ -18,14 +18,14 @@
             <div class="container">
                 <div class="Title">
                     <div to="/" class="mainTitle">
-                        <a class="linkBtn" href="/index.php" titleName Title">GEOSAT</a>
+                        <a class="linkBtn" href="index.php" titleName Title">GEOSAT</a>
                     </div>
                 </div>
 
                 <nav class="navBtn">
-                    <a href="/index.php" class="Btn">HOME</a>
-                    <a href="/about.php" class="Btn">About</a>
-                    <a href="/show_m.php" class="Btn">MEASURMENT</a><a href="/mypage.php" class="Btn">MYPAGE</a>
+                    <a href="index.php" class="Btn">HOME</a>
+                    <a href="about.php" class="Btn">About</a>
+                    <a href="show_m.php" class="Btn">MEASURMENT</a><a href="mypage.php" class="Btn">MYPAGE</a>
                     <button type="button" class="logoutBtn textMain"
                         onclick="location.href='logout_action.php'">LOGOUT&ensp;</button>
                     <?php
@@ -65,7 +65,7 @@
             </div>
             <div>
                 <!-- 드론목록 -->
-                <form action="/enroll_drone_action.php" method="POST">
+                <form action="enroll_drone_action.php" method="POST">
                     <input class="inputBox Strong textMain" type="text" placeholder="Enter your drone number"
                         name="DroneNum" />
                     <input class="enrollBtn Btn" type="submit" name="update" value="UPDATE" />
@@ -74,7 +74,7 @@
             <!-- 아래부터 추가된 것들 -->
             <div> 
                 <!-- 비밀번호 변경 -->
-                <form action="/update_action.php" method="POST">
+                <form action="update_action.php" method="POST">
                     <input class = "inputBox" type="password" placeholder="변경할 비밀번호를 입력하세요" name="newPW"/>
                     <input class = "enrollBtn Btn" type="submit" name="update" value="update" />
                 </form>
@@ -98,7 +98,7 @@
         <footer>
             <div class="container">
                 <div>
-                    <a href="/html/index.html" class="Title FooterTitle">GEOSAT</a>
+                    <a href="index.html" class="Title FooterTitle">GEOSAT</a>
                 </div>
 
                 <div class="copyright">
